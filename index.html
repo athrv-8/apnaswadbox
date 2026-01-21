@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apna Kitchen Box | Premium Culinary Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --baby-pink: #F4C2C2;
+            --navy-blue: #000080;
+            --luxury-white: #F8F9FA;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--luxury-white);
+            color: var(--navy-blue);
+            scroll-behavior: smooth;
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(0, 0, 128, 0.7), rgba(0, 0, 128, 0.4)), url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=1600');
+            background-size: cover;
+            background-position: center;
+        }
+        .nav-link:hover {
+            color: var(--baby-pink);
+            transition: 0.3s;
+        }
+        .progress-bar {
+            height: 4px;
+            background: linear-gradient(90deg, var(--baby-pink), var(--navy-blue));
+            width: 65%; /* Visual representation of "In Progress" */
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Header Navigation -->
+    <header class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-black tracking-tighter uppercase">
+                Apna Kitchen <span class="text-[#F4C2C2]">Box</span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium uppercase text-xs tracking-widest">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#launch" class="nav-link">Launch Status</a>
+            </div>
+            <div>
+                <a href="https://instagram.com/Apnaswadbox" target="_blank" class="bg-[#000080] text-white px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-[#F4C2C2] hover:text-[#000080] transition-all">
+                    Follow Us
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient h-screen flex items-center justify-center text-center text-white px-6">
+        <div class="max-w-4xl">
+            <h1 class="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-4 leading-none">
+                The Future of <br><span class="text-[#F4C2C2]">Home Dining</span>
+            </h1>
+            <p class="text-lg md:text-xl font-light tracking-wide mb-8 opacity-90">
+                Premium quality kitchen boxes delivered from Delhi to your soul.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                <a href="#launch" class="bg-[#F4C2C2] text-[#000080] px-10 py-4 rounded-sm font-bold uppercase tracking-widest hover:bg-white transition-all">
+                    Project In Progress
+                </a>
+                <span class="text-sm uppercase tracking-widest opacity-70">Launching in 120 Days</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-[#F4C2C2] font-bold uppercase tracking-widest text-sm">Our Heritage</span>
+                <h2 class="text-4xl md:text-5xl font-black uppercase mt-2 mb-6">Apna Kitchen Box™</h2>
+                <p class="text-gray-600 leading-relaxed mb-6 text-lg">
+                    Inspired by the precision of modern design and the richness of authentic Indian flavors, Apna Kitchen Box is redefining the culinary landscape of New Ashok Nagar. 
+                </p>
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    We don't just provide food; we provide a curated "box" of experiences. Every ingredient is handpicked, every recipe is a legacy, and every delivery is a promise of luxury.
+                </p>
+            </div>
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=1000" alt="Food" class="rounded-lg shadow-2xl">
+                <div class="absolute -bottom-6 -left-6 bg-[#F4C2C2] p-8 hidden md:block">
+                    <p class="text-[#000080] font-black text-2xl uppercase">Authentic<br>Delhi Taste</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Launch Section (Updated to 120 Days & In Progress) -->
+    <section id="launch" class="py-24 bg-[#000080] text-white">
+        <div class="container mx-auto px-6 text-center">
+            <div class="inline-block px-4 py-1 border border-[#F4C2C2] text-[#F4C2C2] text-xs font-bold uppercase tracking-[0.3em] mb-6">
+                Digital Launch In Progress
+            </div>
+            <h2 class="text-4xl md:text-6xl font-black uppercase mb-12">Countdown to the Digital World</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+                <div class="p-6 border border-white/10 bg-white/5">
+                    <span class="block text-5xl md:text-7xl font-bold" id="days">120</span>
+                    <span class="uppercase tracking-widest text-xs opacity-60">Days</span>
+                </div>
+                <div class="p-6 border border-white/10 bg-white/5">
+                    <span class="block text-5xl md:text-7xl font-bold" id="hours">00</span>
+                    <span class="uppercase tracking-widest text-xs opacity-60">Hours</span>
+                </div>
+                <div class="p-6 border border-white/10 bg-white/5">
+                    <span class="block text-5xl md:text-7xl font-bold" id="mins">00</span>
+                    <span class="uppercase tracking-widest text-xs opacity-60">Mins</span>
+                </div>
+                <div class="p-6 border border-white/10 bg-white/5">
+                    <span class="block text-5xl md:text-7xl font-bold" id="secs">00</span>
+                    <span class="uppercase tracking-widest text-xs opacity-60">Secs</span>
+                </div>
+            </div>
+
+            <div class="max-w-2xl mx-auto mb-16">
+                <div class="flex justify-between text-xs uppercase tracking-widest mb-2 opacity-70">
+                    <span>Concept</span>
+                    <span>Development</span>
+                    <span>Launch</span>
+                </div>
+                <div class="w-full bg-white/10 rounded-full overflow-hidden">
+                    <div class="progress-bar"></div>
+                </div>
+                <p class="mt-4 text-sm italic opacity-60">Currently finalizing the digital kitchen architecture...</p>
+            </div>
+            
+            <div class="max-w-md mx-auto">
+                <p class="mb-6 opacity-80 uppercase tracking-widest text-sm font-bold">Secure your early access</p>
+                <form action="https://formspree.io/f/xvgzbgze" method="POST" class="flex flex-col md:flex-row gap-2">
+                    <input type="email" name="email" placeholder="YOUR EMAIL ADDRESS" class="flex-grow px-6 py-4 bg-transparent border border-white/30 text-white focus:outline-none focus:border-[#F4C2C2]" required>
+                    <input type="hidden" name="_replyto" value="athrvmishra8@gmail.com">
+                    <input type="hidden" name="_subject" value="New Waitlist Signup: Apna Kitchen Box">
+                    <button type="submit" class="bg-[#F4C2C2] text-[#000080] px-8 py-4 font-bold uppercase text-xs tracking-widest hover:bg-white transition-all">Join</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#F8F9FA] py-16 border-t border-gray-200">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-2xl font-black uppercase mb-4">Apna Kitchen Box™</h3>
+                    <p class="text-gray-500 max-w-sm italic">"Bringing the luxury of fine dining and the warmth of home-cooked meals together in a premium box."</p>
+                </div>
+                <div>
+                    <h4 class="font-bold uppercase text-sm mb-4">Direct Contact</h4>
+                    <ul class="text-gray-500 space-y-2 text-sm">
+                        <li>Phone: +91 9369553542</li>
+                        <li>Email: athrvmishra8@gmail.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold uppercase text-sm mb-4">Location</h4>
+                    <p class="text-gray-500 text-sm">
+                        Block D, Near Kali Badi Mandir,<br>
+                        New Ashok Nagar, Delhi
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-200">
+                <p class="text-gray-400 text-[10px] tracking-widest">© 2026 APNA KITCHEN BOX. DIGITAL INFRASTRUCTURE IN PROGRESS.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="https://instagram.com/Apnaswadbox" target="_blank" class="text-[#000080] hover:text-[#F4C2C2] font-bold text-sm uppercase">Instagram: Apnaswadbox™</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Updated Countdown for 120 Days
+        const launchDate = new Date().getTime() + (120 * 24 * 60 * 60 * 1000);
+        
+        const updateTimer = () => {
+            const now = new Date().getTime();
+            const distance = launchDate - now;
+            
+            const d = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const s = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').innerText = d < 10 ? '0' + d : d;
+            document.getElementById('hours').innerText = h < 10 ? '0' + h : h;
+            document.getElementById('mins').innerText = m < 10 ? '0' + m : m;
+            document.getElementById('secs').innerText = s < 10 ? '0' + s : s;
+        };
+
+        setInterval(updateTimer, 1000);
+        updateTimer();
+    </script>
+
+</body>
+</html>
+
